@@ -1,5 +1,7 @@
 # RxJS Anti-corruption Layer
 
+[基于 RxJS 构建稳健前端应用](https://www.bilibili.com/video/BV1C34y167NR)
+
 ## API V1
 ```ts
 import { forkJoin, map, mergeMap, Observable } from "rxjs";
