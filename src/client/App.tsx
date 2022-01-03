@@ -1,4 +1,3 @@
-import React from "react";
 import MemoryPromise from "./promise/MemoryPromise";
 import MemoryObservable from "./observable/MemoryObservable";
 

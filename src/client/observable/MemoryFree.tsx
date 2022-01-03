@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getMemoryFree } from "./service";
 import { lastValueFrom } from "rxjs";
 
@@ -10,7 +10,7 @@ function MemoryFree() {
       setFree(result);
     })();
   }, []);
-  return <div>Free: {free} GB</div>;
+  return <div>未使用内存: {free} GB</div>;
 }
 
 export default MemoryFree;

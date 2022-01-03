@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { lastValueFrom } from "rxjs";
 import { getMemoryUsagePercent } from "./service";
 
@@ -10,7 +10,7 @@ function MemoryUsagePercent() {
       setPercent(result);
     })();
   }, []);
-  return <div>Usage Percent: {percent} %</div>;
+  return <div>内存占用率: {percent} %</div>;
 }
 
 export default MemoryUsagePercent;

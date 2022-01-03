@@ -1,8 +1,10 @@
 import MemoryFree from "./MemoryFree";
 import MemoryUsage from "./MemoryUsage";
 import MemoryUsagePercent from "./MemoryUsagePercent";
-import React from "react";
 
+/**
+ * 请求 v3 接口，并兼容 v2 接口
+ */
 function MemoryObservable() {
   return (
     <div>

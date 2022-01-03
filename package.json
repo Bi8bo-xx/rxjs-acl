@@ -24,12 +24,12 @@
   "scripts": {
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently -p name -c \"yellow,magenta,blue\" -n \"webpack-server,nodemon-server,CRA\" \"yarn dev:server:webpack\" \"yarn dev:server:nodemon\" \"yarn dev:client\"",
+    "dev": "concurrently -p name -c \"yellow,magenta,blue\" -n \"webpack-server,nodemon-server,CRA\" \"npm run dev:server:webpack\" \"npm run dev:server:nodemon\" \"npm run dev:client\"",
     "dev:client": "wait-on -l tcp:3001 && react-scripts start",
-    "dev:server": "concurrently -p name -c \"yellow,magenta\" -n \"webpack-server,nodemon-server\" \"yarn dev:server:webpack\" \"yarn dev:server:nodemon\"",
+    "dev:server": "concurrently -p name -c \"yellow,magenta\" -n \"webpack-server,nodemon-server\" \"npm run dev:server:webpack\" \"npm run dev:server:nodemon\"",
     "dev:server:webpack": "webpack --config webpack.config.server.js --watch",
     "dev:server:nodemon": "rm -f build/server.js && wait-on -l build/server.js && nodemon build/server.js",
-    "build": "yarn build:client && yarn build:backend",
+    "build": "npm run build:client && npm run build:backend",
     "build:client": "react-scripts build",
     "build:server": "webpack --config webpack.config.server.js"
   },

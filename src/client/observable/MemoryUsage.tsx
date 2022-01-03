@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { lastValueFrom } from "rxjs";
 import { getMemoryUsage } from "./service";
 
@@ -10,7 +10,7 @@ function MemoryUsage() {
       setUsage(result);
     })();
   }, []);
-  return <div>Usage: {usage} GB</div>;
+  return <div>已使用内存: {usage} GB</div>;
 }
 
 export default MemoryUsage;
